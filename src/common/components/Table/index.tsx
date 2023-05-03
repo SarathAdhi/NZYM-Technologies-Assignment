@@ -4,6 +4,7 @@ import TrAccordion from "../TrAccordion";
 import TdRender from "../TdRender";
 import clsx from "clsx";
 import styles from "./Table.module.css";
+import Image from "next/image";
 
 const DummyTH = () => (
   <>
@@ -62,8 +63,11 @@ const Table: React.FC = () => {
                         className={styles.action_btn}
                         onClick={() => sortData(key)}
                       >
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="/arrow-down.svg"
+                          alt="arrow"
                           className={clsx(
                             dataActions[key] !== "ASC" && styles.rotate_up
                           )}
