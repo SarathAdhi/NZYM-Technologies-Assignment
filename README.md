@@ -1,3 +1,37 @@
+# Problem Statement
+
+Build a table component as shown above.
+
+- Use faker API to populate the table. (https://fakerapi.it/en). Use the Person resource
+  from the same.
+- Columns
+  - Avatar: refers to a person’s image. A sample Avatar will look like this .
+    It should show the person’s image. You may display the person’s credentials if
+    the person's image is unavailable. i.e. first letters of the first name and last name.
+  - Id: refers to person id
+  - First Name: person first name
+  - Last Name: person last name
+  - Gender: person gender
+  - Age: person age
+  - Contact: person contact
+- 🔼 Marked columns will be sortable alphabetically or numerically depending on the
+  column type. The sort button should toggle between ascending and descending when
+  clicked.
+- The drop-down for the Number of rows, should have options -- 10, 15, 30, 50.
+  On choosing the number, the number of table rows should update accordingly.
+- Each row should be clickable. Clicking the row, should expand within the table and show
+  the Person’s complete address.
+
+# Tech Stack
+
+- Next.js
+- TypeScript
+- Zustand - State management
+- Axios - API Fetch
+- zod - Object validator and parser
+
+![image](https://user-images.githubusercontent.com/91727830/235979518-fb9cf23e-4b6c-437c-9445-1b252173cf72.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -13,26 +47,3 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
