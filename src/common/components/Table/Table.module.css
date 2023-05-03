@@ -1,0 +1,60 @@
+.th_style_none {
+  border: none;
+  background-color: white;
+}
+
+.th_select {
+  background-color: white;
+}
+
+.top_row {
+  background-color: white;
+  padding: 5px;
+  border: 2px solid black;
+  border-bottom: 0px;
+}
+
+.th_sub_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.action_btn {
+  border: none;
+  background-color: #f19d38;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: grid;
+}
+
+.action_btn img {
+  width: 25px;
+  height: 25px;
+}
+
+.action_btn .rotate_up {
+  rotate: 180deg;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='red' viewBox='0 0 24 24' width='30' height='30' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  border-radius: 2px;
+  padding-right: 28px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.select:focus {
+  outline: none;
+}
