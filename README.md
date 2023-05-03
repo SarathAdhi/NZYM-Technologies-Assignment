@@ -1,5 +1,7 @@
 # Problem Statement
 
+Website Deployed: https://nzym-technologies-assignment.vercel.app/
+
 Build a table component as shown above.
 
 - Use faker API to populate the table. (https://fakerapi.it/en). Use the Person resource
